@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de texto - Challenge One</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    <header class="cabecalho">
+        <img src="assets/logo.svg">
+    </header>
+    <main class="challenge">
+        <section class="challenge__input">
+            <textarea class="challenge__input__texto" name="input" id="input" rows="10" placeholder="Digite seu texto"></textarea>
+            <div class="challenge__input__alerta">
+                <img class="challenge__input__alerta__img" src="assets/alerta.svg" alt="Alerta">
+                <p class="challenge__input__alerta__texto">Apenas letras minusculas</p>
+            </div>
+            <div class="challenge__input__botao">
+                <button class="challenge__input__botao__criptografar" onclick="criptografarTexto()" >Criptografar</button>
+                <button class="challenge__input__botao__descriptografar" onclick="descriptografarTexto()">Descriptografar</button>
+            </div>
+        </section>
+        <section class="challenge__demo" id="demo">
+            <img class="challenge__demo__img" src="assets/img.svg" alt="img">
+            <h1 class="challenge__demo__texto">Nenhuma mensagem encontrada</h1>
+            <p class="challenge__demo__paragrafo">Digite um texto que você deseja criptografar ou descriptografar.</p>
+        </section>
+        <section class="challenge__output" id="output">
+            <h1 id="output__texto" class="challenge__output__texto"></h1>
+            <button class="challenge__output__copiar" onclick="copiar()" >Copiar</button>
+        </section>
+    </main>
+    <footer>
+        <p class="rodape">Criado Por Henrique Victorino</p>
+    </footer>
+    <script src="app.js" ></script>
+</body>
+</html>
