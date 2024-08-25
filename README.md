@@ -20,3 +20,7 @@ Este projeto é uma aplicação web simples que permite criptografar e descripto
 
    ```bash
    git clone https://github.com/HFVictorino/Decodificador-de-texto-one-challenge.git
+
+2. **Deploy Teste**
+
+   https://decodificador-de-texto-one-challenge.vercel.app/
